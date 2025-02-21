@@ -5,6 +5,7 @@ import os
 import time
 import requests
 
+
 def main():
     while True:
         time.sleep(60*60*1)
@@ -25,3 +26,7 @@ def main():
                 print('Error:', response.status_code, response.text)
         except requests.exceptions.RequestException as e:
             print('Request failed:', e)
+
+
+if __name__ == '__main__':
+    main()
