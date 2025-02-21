@@ -50,7 +50,7 @@ echo "Starting ElectrumX in the background..."
 /home/evr/electrumx/electrumx_server > /home/evr/electrumx/electrumx.log 2>&1 &
 
 # Start the Mantra notifier in the background, no logs
-nohup /home/mantra.py > /dev/null 2>&1 &
+nohup /home/evr/mantra.py > /dev/null 2>&1 &
 
 # Keep the container running
 echo "Container is running, following evrmored logs..."
