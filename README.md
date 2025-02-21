@@ -1,6 +1,10 @@
 # EvrmoreNode
 containerized evrmored + electrumx with startup command so its easy to run an evrmore node
 
+## build with:
+```
+docker build -t moontreeapp/evrmorenode:lastest .
+```
 
 ## run with:
 note: make sure you replace the -v locations with a folder on your machine
