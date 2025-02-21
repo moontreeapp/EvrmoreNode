@@ -15,6 +15,7 @@ RUN apt-get update && apt-get install -y \
     libleveldb-dev \
     cmake \
     build-essential \
+    dos2unix \
     && rm -rf /var/lib/apt/lists/*
 
 # Create the evr user and necessary directories
@@ -85,6 +86,8 @@ RUN chown -R evr:evr /home/evr/.evrmore /home/evr/electrumx
 # Copy the startup script
 COPY ./src/start.sh /home/evr/start.sh
 COPY ./src/mantra.py /home/evr/mantra.py
-RUN chown evr:evr /home/evr/start.sh && chmod +x /home/evr/start.sh
+RUN chown evr:evr /home/evr/start.sh && \
+    chmod +x /home/evr/start.sh && \
+    dos2unix ./src/start.sh
 USER evr
 CMD ["/home/evr/start.sh"]
