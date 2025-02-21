@@ -86,3 +86,6 @@ RUN . /home/evr/python_for_electrumx/bin/activate \
     && pip3 install websockets
 
 CMD ["/home/evr/start.sh"]
+
+## MOuNT IN THESE DATABASE FOLDERS ./evrmore-data /init-files/evrmore-data/database
+## MOuNT IN THESE DATABASE FOLDERS ./electrumx-data /init-files/electrumx-data/database
