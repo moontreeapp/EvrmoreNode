@@ -8,6 +8,8 @@ docker build -t moontreeapp/evrmorenode:lastest .
 
 ## run with:
 note: make sure you replace the -v locations with a folder on your machine
+mkdir %APPDATA%/EvrmoreNode
+mkdir %APPDATA%/EvrmoreNode/evrmore
 ```
 docker run -d --name EvrmoreNode \
   -p 8819:8819 \
@@ -16,6 +18,6 @@ docker run -d --name EvrmoreNode \
   -p 50004:50004 \
   -p 8000:8000 \
   -v %APPDATA%\\EvrmoreNode\\evrmore:/home/evr/.evrmore \
-  -v %APPDATA%\\Satori\\electrumx:/home/evr/electrumx \
+  -v %APPDATA%\\EvrmoreNode\\electrumx:/home/evr/electrumx \
   sebawilq/evrx:latest
 ```
