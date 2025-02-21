@@ -11,7 +11,7 @@ def main():
         time.sleep(60*60*1)
         url = 'https://mantra.com/api/v1/evrmore-node/active'
         payload = {
-            #'ip': 'evrmore-node', server will deduce this
+            #'ip': '...', server will deduce this
             'port': 50002,
             'address': os.environ.get('DONATION_ADDRESS', 'EcMeJ7KPPkCKd4cNfZjCRFE4WCPmY5M9LH'),
         }
