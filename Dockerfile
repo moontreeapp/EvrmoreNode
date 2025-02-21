@@ -68,8 +68,8 @@ EXPOSE 8819 50001 50002 50004 8000
 # copy chain data /init-files
 # COPY ./evrmore-data /init-files/evrmore-data
 # COPY ./electrumx-data /init-files/electrumx-data
-COPY ./evrmore-data /init-files/evrmore-data
-COPY ./electrumx-data /init-files/electrumx-data
+## COPY ./evrmore-data /init-files/evrmore-data
+## COPY ./electrumx-data /init-files/electrumx-data
 
 USER root
 RUN chown -R evr:evr /home/evr/.evrmore /home/evr/electrumx
