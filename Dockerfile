@@ -83,7 +83,7 @@ USER root
 RUN chown -R evr:evr /home/evr/.evrmore /home/evr/electrumx
 
 # Copy the startup script
-COPY src/start.sh /home/evr/start.sh
+COPY ./src/start.sh /home/evr/start.sh
 RUN chown evr:evr /home/evr/start.sh && chmod +x /home/evr/start.sh
 USER evr
 CMD ["/home/evr/start.sh"]

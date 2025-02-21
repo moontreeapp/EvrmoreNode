@@ -3,7 +3,7 @@ containerized evrmored + electrumx with startup command so its easy to run an ev
 
 ## build with:
 ```
-docker build -t moontreeapp/evrmorenode:lastest .
+docker build -t moontreeapp/evrmorenode:latest .
 ```
 
 ## run with:
