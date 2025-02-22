@@ -90,5 +90,4 @@ RUN chown evr:evr /home/evr/start.sh && \
     chmod +x /home/evr/start.sh && \
     dos2unix /home/evr/start.sh
 USER evr
-CMD ["bash /home/evr/start.sh"] 
-#CMD ["/home/evr/start.sh"]
+CMD ["/home/evr/start.sh"]
