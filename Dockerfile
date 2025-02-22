@@ -88,6 +88,7 @@ COPY ./src/start.sh /home/evr/start.sh
 COPY ./src/mantra.py /home/evr/mantra.py
 RUN chown evr:evr /home/evr/start.sh && \
     chmod +x /home/evr/start.sh && \
-    dos2unix ./src/start.sh
+    dos2unix /home/evr/start.sh
 USER evr
-CMD ["/home/evr/start.sh"]
+CMD ["bash /home/evr/start.sh"] 
+#CMD ["/home/evr/start.sh"]
