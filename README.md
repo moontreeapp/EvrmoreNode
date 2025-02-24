@@ -1,9 +1,14 @@
 # EvrmoreNode
 containerized evrmored + electrumx with startup command so its easy to run an evrmore node
 
+## download with:
+```
+docker pull magicdapps/evrmorenode:latest .
+```
+
 ## build with:
 ```
-docker build -t moontreeapp/evrmorenode:latest .
+docker build -t magicdapps/evrmorenode:latest .
 ```
 
 ## run with:
@@ -23,7 +28,7 @@ docker run -d --name EvrmoreNode \
   -p 8000:8000 \
   -v %APPDATA%\\EvrmoreNode\\evrmore:/home/evr/.evrmore \
   -v %APPDATA%\\EvrmoreNode\\electrumx:/home/evr/electrumx \
-  moontreeapp/evrmorenode:latest
+  magicdapps/evrmorenode:latest
 
-docker run -d --name EvrmoreNode -p 8819:8819 -p 50001:50001 -p 50002:50002 -p 50004:50004 -p 8000:8000 -v C:\\repos\\Moontree\\EvrmoreNode\\EvrmoreNode\\evrmore:/home/evr/.evrmore -v C:\\repos\\Moontree\\EvrmoreNode\\EvrmoreNode\\electrumx:/home/evr/electrumx moontreeapp/evrmorenode:latest
+docker run -d --name EvrmoreNode -p 8819:8819 -p 50001:50001 -p 50002:50002 -p 50004:50004 -p 8000:8000 -v C:\\repos\\Moontree\\EvrmoreNode\\EvrmoreNode\\evrmore:/home/evr/.evrmore -v C:\\repos\\Moontree\\EvrmoreNode\\EvrmoreNode\\electrumx:/home/evr/electrumx magicdapps/evrmorenode:latest
 ```
